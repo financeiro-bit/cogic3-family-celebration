@@ -43,21 +43,28 @@ const About = () => {
                 </h3>
                 <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Fundada com o propósito de ser um lugar onde as pessoas podem se prostrar 
-                    diante da presença de Deus, nossa igreja é um espaço de adoração genuína, 
-                    crescimento espiritual e transformação de vidas.
+                    A Igreja Evangélica Prostrados aos Teus Pés nasceu em <strong className="text-reino-brown">15 de maio de 2011</strong>, 
+                    começando humildemente em uma pequena sala residencial dos Pastores Paulo e Rosângela. 
+                    O que começou como um pequeno grupo de fé cresceu pela graça de Deus.
                   </p>
                   <p>
-                    Seguindo os ensinamentos bíblicos e a tradição da Igreja de Deus em Cristo, 
-                    buscamos ser uma comunidade que reflete o amor, a graça e o poder de Jesus Cristo.
+                    Nossa jornada passou por um salão emprestado por nosso irmão Batista, até encontrarmos 
+                    nossa sede atual, inaugurada em <strong className="text-reino-brown">13 de outubro de 2011</strong>. 
+                    Deus cumpriu suas promessas sobrenaturais e nos deu um lugar para adorá-Lo.
+                  </p>
+                  <p>
+                    Somos uma igreja com <strong className="text-reino-gold">visão de Reino</strong> - não competimos 
+                    com outras igrejas, mas lutamos juntos para arrebanhar almas para o Rei da Glória.
                   </p>
                 </div>
               </div>
               
               <div className="bg-reino-beige/50 rounded-3xl p-8 border border-reino-beige">
                 <blockquote className="text-reino-brown font-medium italic text-xl leading-relaxed">
-                  "Prostrados aos Seus pés, encontramos nossa força, nossa direção e nossa esperança."
+                  "Temos visão de Reino, onde ninguém é maior que ninguém. Não competimos com outras igrejas, 
+                  mas lutamos juntos para arrebanhar almas para o Rei da Glória."
                 </blockquote>
+                <footer className="mt-4 text-reino-gold font-medium">- Pastor Paulo</footer>
               </div>
             </div>
           </div>
