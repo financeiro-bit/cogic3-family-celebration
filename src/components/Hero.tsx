@@ -30,7 +30,7 @@ const Hero = () => {
                 IGREJA DE DEUS EM CRISTO
               </p>
             </div>
-            <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-6">
+            <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-none mb-6">
               <span className="font-bold text-reino-gold">PROSTRADOS AOS TEUS PÉS</span>
             </h1>
             <div className="flex items-center space-x-4 mb-6">
