@@ -53,16 +53,26 @@ export default {
           accent: "hsl(var(--church-accent))",
           "accent-light": "hsl(var(--church-accent-light))",
           muted: "hsl(var(--church-muted))",
+          electric: "hsl(var(--church-electric))",
+          "electric-light": "hsl(var(--church-electric-light))",
         },
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-accent": "var(--gradient-accent)",
+        "gradient-electric": "var(--gradient-electric)",
         "gradient-subtle": "var(--gradient-subtle)",
+        "gradient-glass": "var(--gradient-glass)",
       },
       boxShadow: {
-        church: "var(--shadow-church)",
+        soft: "var(--shadow-soft)",
+        medium: "var(--shadow-medium)",
+        strong: "var(--shadow-strong)",
+        glow: "var(--shadow-glow)",
         gold: "var(--shadow-gold)",
+      },
+      backdropBlur: {
+        glass: "var(--glass-backdrop)",
       },
       fontFamily: {
         sans: [
@@ -74,6 +84,7 @@ export default {
           "sans-serif",
         ],
         serif: ["Playfair Display", "Georgia", "serif"],
+        mono: ["JetBrains Mono", "Fira Code", "monospace"],
       },
       animation: {
         "fade-in": "fadeIn 0.6s ease-out",

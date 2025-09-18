@@ -8,59 +8,72 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Core Colors - Modern Church Theme */
+    /* Modern Color Palette */
     --background: 0 0% 98%;
-    --foreground: 0 0% 15%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 15%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 15%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Primary - Deep Blue/Navy for spiritual trust */
-    --primary: 220 40% 25%;
+    /* Modern Deep Navy */
+    --primary: 220 30% 15%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Warm Gold/Amber for divine connection */
-    --secondary: 45 85% 45%;
-    --secondary-foreground: 0 0% 98%;
+    /* Warm Amber Gold */
+    --secondary: 45 100% 60%;
+    --secondary-foreground: 0 0% 10%;
 
-    /* Muted - Soft grays for content */
+    /* Soft Neutrals */
     --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Accent - Lighter gold for highlights */
-    --accent: 45 75% 55%;
-    --accent-foreground: 0 0% 15%;
+    /* Electric Blue Accent */
+    --accent: 210 100% 65%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 95%;
-    --ring: 220 40% 25%;
+    --border: 0 0% 92%;
+    --input: 0 0% 94%;
+    --ring: 210 100% 65%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Church-specific colors */
-    --church-hero: 220 45% 20%;
+    /* Modern Church Colors */
+    --church-hero: 220 30% 12%;
     --church-hero-foreground: 0 0% 98%;
-    --church-accent: 45 85% 45%;
-    --church-accent-light: 45 75% 65%;
-    --church-muted: 0 0% 96%;
+    --church-accent: 45 100% 60%;
+    --church-accent-light: 45 100% 70%;
+    --church-muted: 0 0% 97%;
+    --church-electric: 210 100% 65%;
+    --church-electric-light: 210 100% 75%;
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(220, 45%, 20%), hsl(220, 35%, 35%));
-    --gradient-accent: linear-gradient(135deg, hsl(45, 85%, 45%), hsl(45, 75%, 55%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 98%), hsl(0, 0%, 95%));
+    /* Modern Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220, 30%, 12%) 0%, hsl(220, 25%, 18%) 50%, hsl(220, 35%, 25%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45, 100%, 60%) 0%, hsl(40, 95%, 65%) 100%);
+    --gradient-electric: linear-gradient(135deg, hsl(210, 100%, 65%) 0%, hsl(220, 90%, 70%) 100%);
+    --gradient-subtle: linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 96%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
 
-    /* Shadows */
-    --shadow-church: 0 10px 30px -10px hsl(220, 40%, 25% / 0.2);
-    --shadow-gold: 0 4px 20px -5px hsl(45, 85%, 45% / 0.3);
+    /* Modern Shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(220, 30%, 15% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(220, 30%, 15% / 0.12);
+    --shadow-strong: 0 20px 50px -15px hsl(220, 30%, 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(210, 100%, 65% / 0.15);
+    --shadow-gold: 0 8px 30px -8px hsl(45, 100%, 60% / 0.2);
+
+    /* Glass Effects */
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-backdrop: blur(20px);
 
     /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -73,7 +86,7 @@ All colors MUST be HSL.
     --popover: 220 20% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 45 85% 45%;
+    --primary: 45 100% 60%;
     --primary-foreground: 220 20% 8%;
 
     --secondary: 220 15% 15%;
@@ -82,7 +95,7 @@ All colors MUST be HSL.
     --muted: 220 15% 12%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 45 75% 55%;
+    --accent: 210 100% 65%;
     --accent-foreground: 220 20% 8%;
 
     --destructive: 0 62.8% 30.6%;
@@ -90,17 +103,20 @@ All colors MUST be HSL.
 
     --border: 220 15% 15%;
     --input: 220 15% 15%;
-    --ring: 45 85% 45%;
+    --ring: 210 100% 65%;
 
-    --church-hero: 220 25% 12%;
+    --church-hero: 220 25% 8%;
     --church-hero-foreground: 0 0% 95%;
-    --church-accent: 45 85% 45%;
-    --church-accent-light: 45 75% 55%;
-    --church-muted: 220 15% 12%;
+    --church-accent: 45 100% 60%;
+    --church-accent-light: 45 100% 70%;
+    --church-muted: 220 15% 10%;
+    --church-electric: 210 100% 65%;
+    --church-electric-light: 210 100% 75%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(220, 25%, 12%), hsl(220, 20%, 18%));
-    --gradient-accent: linear-gradient(135deg, hsl(45, 85%, 45%), hsl(45, 75%, 55%));
-    --gradient-subtle: linear-gradient(180deg, hsl(220, 20%, 8%), hsl(220, 15%, 10%));
+    --gradient-hero: linear-gradient(135deg, hsl(220, 25%, 8%) 0%, hsl(220, 20%, 12%) 50%, hsl(220, 25%, 18%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.05);
   }
 }
 
