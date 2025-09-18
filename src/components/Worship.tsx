@@ -146,31 +146,6 @@ const Worship = () => {
             </div>
           </div>
 
-          {/* Call to Action for Young People */}
-          <div className="text-center bg-gradient-to-r from-purple-600/20 to-reino-gold/20 backdrop-blur-sm rounded-3xl p-16 border border-white/10">
-            <h3 className="text-white text-4xl md:text-5xl font-light leading-tight mb-6">
-              Uma igreja <span className="font-bold text-reino-gold">diversa</span> e <span className="font-bold text-purple-400">poderosa</span>
-            </h3>
-            <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Na tradição da COGIC, celebramos nossa diversidade e unidade em Cristo. 
-              Aqui cada voz importa, cada história faz diferença, e a adoração nos une como família.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button
-                className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-10 py-4 text-lg rounded-xl transition-all duration-300 hover:scale-105 border-0"
-              >
-                <Users className="mr-3 h-5 w-5" />
-                Conecte-se Conosco
-              </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-10 py-4 text-lg rounded-xl"
-              >
-                <Music className="mr-3 h-5 w-5" />
-                Ouça Nossos Louvores
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import worshipImage from "@/assets/worship-hero.jpg";
+import churchWorshipImage from "@/assets/church-worship-hero.jpg";
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${worshipImage})` }}
+        style={{ backgroundImage: `url(${churchWorshipImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-reino-brown/85 via-reino-brown/70 to-reino-brown/60"></div>
       </div>
