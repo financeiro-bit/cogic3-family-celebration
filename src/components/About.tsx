@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Users, Globe, BookOpen } from "lucide-react";
+import { Heart, Users, Globe, BookOpen, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -57,6 +58,62 @@ const About = () => {
                 <blockquote className="text-reino-brown font-medium italic text-xl leading-relaxed">
                   "Prostrados aos Seus pés, encontramos nossa força, nossa direção e nossa esperança."
                 </blockquote>
+              </div>
+            </div>
+          </div>
+
+          {/* COGIC Affiliation Section */}
+          <div className="mb-32">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-soft border border-white/50">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <div className="flex items-center space-x-3 mb-6">
+                    <div className="w-12 h-0.5 bg-reino-gold"></div>
+                    <p className="text-reino-gold font-medium tracking-[0.2em] text-sm uppercase">
+                      NOSSA FILIAÇÃO
+                    </p>
+                  </div>
+                  <h3 className="text-reino-brown text-4xl md:text-5xl font-light leading-tight mb-6">
+                    Parte da <span className="font-bold">COGIC</span>
+                  </h3>
+                  <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                    Somos orgulhosamente filiados à Church of God in Christ (COGIC), 
+                    uma das maiores denominações pentecostais do mundo, fundada em 1907 
+                    e sediada em Memphis, Tennessee - EUA.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
+                      <span className="text-muted-foreground">Fundada em 1907 nos Estados Unidos</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
+                      <span className="text-muted-foreground">Sede mundial em Memphis, Tennessee</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
+                      <span className="text-muted-foreground">Tradição pentecostal histórica</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="text-center">
+                  <div className="bg-reino-brown/5 rounded-2xl p-8 mb-6">
+                    <div className="w-24 h-24 bg-reino-brown rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-white font-bold text-2xl">COGIC</span>
+                    </div>
+                    <h4 className="font-bold text-reino-brown text-xl mb-2">Church of God in Christ</h4>
+                    <p className="text-muted-foreground">Memphis, Tennessee - EUA</p>
+                  </div>
+                  <Button
+                    variant="outline"
+                    className="border-2 border-reino-brown text-reino-brown hover:bg-reino-brown hover:text-white transition-all duration-300"
+                    onClick={() => window.open('https://www.cogic.org/', '_blank')}
+                  >
+                    Visite o Site Oficial
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

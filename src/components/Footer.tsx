@@ -40,10 +40,19 @@ const Footer = () => {
                 </div>
               </div>
               
-              <p className="text-white/80 text-xl leading-relaxed max-w-lg">
+              <p className="text-white/80 text-xl leading-relaxed max-w-lg mb-6">
                 Igreja de Deus em Cristo - Um lugar onde vidas são transformadas 
                 através do amor e poder de Jesus Cristo.
               </p>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/20">
+                <p className="text-white/90 text-sm mb-2">
+                  <span className="text-reino-gold font-semibold">Filiada à COGIC</span>
+                </p>
+                <p className="text-white/70 text-sm">
+                  Church of God in Christ - Memphis, Tennessee, EUA
+                </p>
+              </div>
               
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
