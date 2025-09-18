@@ -47,32 +47,27 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        church: {
-          hero: "hsl(var(--church-hero))",
-          "hero-foreground": "hsl(var(--church-hero-foreground))",
-          accent: "hsl(var(--church-accent))",
-          "accent-light": "hsl(var(--church-accent-light))",
-          muted: "hsl(var(--church-muted))",
-          electric: "hsl(var(--church-electric))",
-          "electric-light": "hsl(var(--church-electric-light))",
+        reino: {
+          brown: "hsl(var(--reino-brown))",
+          "brown-light": "hsl(var(--reino-brown-light))",
+          beige: "hsl(var(--reino-beige))",
+          warm: "hsl(var(--reino-warm))",
+          gold: "hsl(var(--reino-gold))",
+          cream: "hsl(var(--reino-cream))",
         },
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
-        "gradient-accent": "var(--gradient-accent)",
-        "gradient-electric": "var(--gradient-electric)",
+        "gradient-warm": "var(--gradient-warm)",
         "gradient-subtle": "var(--gradient-subtle)",
-        "gradient-glass": "var(--gradient-glass)",
+        "gradient-beige": "var(--gradient-beige)",
       },
       boxShadow: {
+        subtle: "var(--shadow-subtle)",
         soft: "var(--shadow-soft)",
         medium: "var(--shadow-medium)",
         strong: "var(--shadow-strong)",
-        glow: "var(--shadow-glow)",
-        gold: "var(--shadow-gold)",
-      },
-      backdropBlur: {
-        glass: "var(--glass-backdrop)",
+        warm: "var(--shadow-warm)",
       },
       fontFamily: {
         sans: [
