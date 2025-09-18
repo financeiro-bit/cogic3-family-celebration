@@ -25,9 +25,14 @@ const Hero = () => {
 
           {/* Main Headline - Reino Style */}
           <div className="mb-12">
+            <div className="mb-4">
+              <p className="text-reino-gold font-medium tracking-[0.3em] text-lg md:text-xl uppercase">
+                IGREJA DE DEUS EM CRISTO
+              </p>
+            </div>
             <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-6">
-              <span className="font-bold text-reino-gold">Prostrados</span>{" "}
-              aos Teus Pés
+              <span className="font-bold text-reino-gold">PROSTRADOS</span>{" "}
+              AOS TEUS PÉS
             </h1>
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-0.5 bg-reino-gold"></div>
