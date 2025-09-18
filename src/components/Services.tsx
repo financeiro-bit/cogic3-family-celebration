@@ -13,10 +13,10 @@ const Services = () => {
               MOMENTOS DE ADORAÇÃO
             </p>
             <h2 className="text-reino-brown text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8">
-              Como se <span className="font-bold">envolver</span>
+              Como se <span className="font-bold">conectar</span>
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-              Veja como Deus pode usar você para causar um impacto eterno em nossa comunidade.
+              Descubra as diferentes formas de fazer parte da nossa comunidade jovem e vibrante.
             </p>
           </div>
 
@@ -28,7 +28,7 @@ const Services = () => {
                 name: "Culto de Oração",
                 time: "19h30",
                 icon: Hand,
-                description: "Momento especial de intercessão e busca pela presença de Deus",
+                description: "Momento especial de intercessão, oração e presença de Deus",
                 isOnline: true,
                 gradient: "from-reino-gold to-reino-warm"
               },
@@ -37,7 +37,7 @@ const Services = () => {
                 name: "Culto da Vitória",
                 time: "19h30",
                 icon: Star,
-                description: "Celebração com louvor, palavra e comunhão fraternal",
+                description: "Celebração com louvor coral, palavra poderosa e comunhão",
                 isOnline: false,
                 gradient: "from-reino-brown to-reino-brown-light"
               },
@@ -46,7 +46,7 @@ const Services = () => {
                 name: "Celebração da Família",
                 time: "10h00",
                 icon: Users,
-                description: "Culto especial para toda a família com atividades para todas as idades",
+                description: "Culto especial para toda família com coral e atividades para jovens",
                 isOnline: false,
                 gradient: "from-reino-warm to-reino-gold"
               }

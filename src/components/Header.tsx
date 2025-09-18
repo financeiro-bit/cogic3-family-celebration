@@ -9,10 +9,11 @@ const Header = () => {
   const navItems = [
     { label: "Início", href: "#home" },
     { label: "Sobre", href: "#about" },
+    { label: "Louvor", href: "#worship" },
     { label: "Fotos", href: "#gallery" },
     { label: "Cultos", href: "#services" },
     { label: "Localização", href: "#location" },
-    { label: "Contato", href: "#contact" },
+    { label: "Conecte-se", href: "#contact" },
   ];
 
   return (

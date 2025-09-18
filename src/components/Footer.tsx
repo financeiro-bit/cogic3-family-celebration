@@ -119,7 +119,7 @@ const Footer = () => {
               
               {/* Navigation */}
               <div className="flex space-x-8 text-white/70">
-                {["Início", "Sobre", "Fotos", "Cultos", "Localização"].map((item, index) => (
+                {["Início", "Sobre", "Louvor", "Fotos", "Cultos", "Localização"].map((item, index) => (
                   <a 
                     key={index}
                     href={`#${item.toLowerCase()}`} 

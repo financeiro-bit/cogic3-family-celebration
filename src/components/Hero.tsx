@@ -29,13 +29,19 @@ const Hero = () => {
               This is{" "}
               <span className="font-bold text-reino-gold">cogic3.</span>
             </h1>
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="w-16 h-0.5 bg-reino-gold"></div>
+              <p className="text-reino-gold font-medium tracking-[0.2em] text-lg uppercase">
+                Música • Adoração • Comunidade
+              </p>
+            </div>
           </div>
 
           {/* Description */}
           <div className="mb-16 max-w-2xl">
             <p className="text-white/90 text-xl md:text-2xl leading-relaxed font-light">
-              A COGIC3 é um movimento cristocêntrico que convida todos a viverem o ordinário de forma extraordinária. 
-              Nosso caminho conecta, de maneira simples e verdadeira, as pessoas à presença de Jesus.
+              Somos uma comunidade jovem e vibrante, apaixonada por <span className="font-semibold text-reino-gold">louvor coral</span> e 
+              adoração autêntica. Aqui, sua voz faz a diferença e sua história importa.
             </p>
           </div>
 
