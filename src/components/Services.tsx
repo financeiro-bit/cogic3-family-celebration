@@ -28,7 +28,7 @@ const Services = () => {
                 name: "Culto de Oração",
                 time: "19h30",
                 icon: Hand,
-                description: "Momento especial de intercessão, oração e presença de Deus",
+                description: "Fundamento da nossa igreja: tempo de intercessão, clamor e busca pela presença de Deus",
                 isOnline: true,
                 gradient: "from-reino-gold to-reino-warm"
               },
@@ -37,7 +37,7 @@ const Services = () => {
                 name: "Culto da Vitória",
                 time: "19h30",
                 icon: Star,
-                description: "Celebração com louvor coral, palavra poderosa e comunhão",
+                description: "Palavra poderosa que transforma vidas, com louvor coral e adoração vibrante",
                 isOnline: false,
                 gradient: "from-reino-brown to-reino-brown-light"
               },
@@ -46,7 +46,7 @@ const Services = () => {
                 name: "Celebração da Família",
                 time: "10h00",
                 icon: Users,
-                description: "Culto especial para toda família com coral e atividades para jovens",
+                description: "Adoração em família na tradição COGIC, com coral poderoso e comunhão genuína",
                 isOnline: false,
                 gradient: "from-reino-warm to-reino-gold"
               }
@@ -109,8 +109,8 @@ const Services = () => {
                 Primeira vez <span className="font-bold">conosco?</span>
               </h3>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                Ficaremos felizes em recebê-lo! Não se preocupe com códigos de vestimenta ou 
-                protocolos - venha como está e seja parte da nossa família.
+                Ficaremos felizes em recebê-lo! Somos uma igreja diversa na tradição COGIC, 
+                onde todos são bem-vindos - venha como está e seja parte da nossa família.
               </p>
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-0.5 bg-reino-gold"></div>
@@ -124,10 +124,10 @@ const Services = () => {
             <div className="bg-reino-beige/30 rounded-3xl p-8">
               <div className="space-y-6">
                 {[
-                  "Ambiente acolhedor e familiar",
-                  "Estacionamento disponível",
-                  "Recepção especial para visitantes",
-                  "Ministério infantil"
+                  "Igreja diversa e inclusiva",
+                  "Tradição COGIC desde 2011",
+                  "Recepção calorosa para visitantes",
+                  "Ministério para todas as idades"
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-4">
                     <div className="w-2 h-2 bg-reino-gold rounded-full"></div>

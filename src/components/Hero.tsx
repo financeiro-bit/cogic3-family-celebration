@@ -26,13 +26,13 @@ const Hero = () => {
           {/* Main Headline - Reino Style */}
           <div className="mb-12">
             <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-6">
-              This is{" "}
-              <span className="font-bold text-reino-gold">cogic3.</span>
+              <span className="font-bold text-reino-gold">Prostrados</span>{" "}
+              aos Teus Pés
             </h1>
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-0.5 bg-reino-gold"></div>
               <p className="text-reino-gold font-medium tracking-[0.2em] text-lg uppercase">
-                Música • Adoração • Comunidade
+                Oração • Palavra • Adoração
               </p>
             </div>
           </div>
@@ -40,8 +40,9 @@ const Hero = () => {
           {/* Description */}
           <div className="mb-16 max-w-2xl">
             <p className="text-white/90 text-xl md:text-2xl leading-relaxed font-light">
-              Somos uma comunidade jovem e vibrante, apaixonada por <span className="font-semibold text-reino-gold">louvor coral</span> e 
-              adoração autêntica. Aqui, sua voz faz a diferença e sua história importa.
+              Uma igreja na tradição da <span className="font-semibold text-reino-gold">COGIC</span>, 
+              onde a diversidade se une em adoração. Fundamentados na oração, firmes na Palavra 
+              e apaixonados pela presença de Deus.
             </p>
           </div>
 

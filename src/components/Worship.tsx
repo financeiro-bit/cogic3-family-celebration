@@ -58,11 +58,11 @@ const Worship = () => {
               <Music className="h-8 w-8 text-reino-gold" />
             </div>
             <h2 className="text-white text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8">
-              Adorar é a nossa <span className="font-bold text-reino-gold">essência!</span>
+              Adoração é a nossa <span className="font-bold text-reino-gold">essência!</span>
             </h2>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed font-light">
-              A música é o coração pulsante da nossa igreja. Através do louvor coral e adoração, 
-              experimentamos a presença de Deus de forma única e transformadora.
+              Na tradição da COGIC, a adoração coral é o coração pulsante da nossa igreja. 
+              Através da música poderosa, experimentamos a presença de Deus que transforma vidas.
             </p>
           </div>
 
@@ -149,11 +149,11 @@ const Worship = () => {
           {/* Call to Action for Young People */}
           <div className="text-center bg-gradient-to-r from-purple-600/20 to-reino-gold/20 backdrop-blur-sm rounded-3xl p-16 border border-white/10">
             <h3 className="text-white text-4xl md:text-5xl font-light leading-tight mb-6">
-              Uma igreja <span className="font-bold text-reino-gold">jovem</span> e <span className="font-bold text-purple-400">vibrante</span>
+              Uma igreja <span className="font-bold text-reino-gold">diversa</span> e <span className="font-bold text-purple-400">poderosa</span>
             </h3>
             <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Se você tem entre 15 e 40 anos e busca uma comunidade autêntica, cheia de música e adoração, 
-              este é o seu lugar. Aqui, cada voz importa e cada história faz diferença.
+              Na tradição da COGIC, celebramos nossa diversidade e unidade em Cristo. 
+              Aqui cada voz importa, cada história faz diferença, e a adoração nos une como família.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button
