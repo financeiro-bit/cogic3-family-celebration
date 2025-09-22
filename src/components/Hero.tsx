@@ -1,10 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Users, Calendar } from "lucide-react";
+import { ArrowRight, BookOpen, Users, Calendar, Clock, Trophy, Star } from "lucide-react";
 import cogicMenDiscussion from "@/assets/cogic-men-discussion.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Urgency Banner */}
+      <div className="absolute top-0 left-0 right-0 bg-burgundy text-white py-3 z-20">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <p className="text-sm md:text-base font-bold animate-pulse">
+            🔥 ÚLTIMOS DIAS - Inscrições abertas para a nova turma de 4 meses!
+          </p>
+        </div>
+      </div>
+
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -14,29 +23,29 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-8 py-32">
+      <div className="relative z-10 container mx-auto px-8 py-32 pt-20">
         <div className="max-w-4xl">
           {/* Intro Text */}
           <div className="mb-8">
-            <p className="text-gold font-medium tracking-[0.2em] text-sm uppercase">
-              Ministério Masculino Cristão
-            </p>
+            <span className="inline-flex items-center px-6 py-3 bg-gold/90 text-burgundy text-sm font-bold rounded-full mb-4 animate-scale-in">
+              <Trophy className="h-4 w-4 mr-2" />
+              CLUBE EXCLUSIVO PARA HOMENS CRISTÃOS
+            </span>
           </div>
 
           {/* Main Headline */}
           <div className="mb-12">
             <div className="mb-6">
-              <h1 className="font-serif-elegant text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-                <span className="text-gold">Verbo</span> & <span className="text-gold">Verso</span>
+              <h1 className="font-serif-elegant text-white text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
+                <span className="block text-gold animate-fade-in">Transforme</span>
+                <span className="block text-white animate-fade-in">Sua Vida</span>
+                <span className="block text-gold animate-fade-in">em 4 Meses</span>
               </h1>
-              <h2 className="font-serif-elegant text-white text-2xl md:text-3xl font-normal leading-relaxed">
-                Clube do Livro
-              </h2>
             </div>
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-0.5 bg-gold"></div>
               <p className="text-gold font-medium tracking-[0.2em] text-lg uppercase">
-                COGIC3 Prostrados aos Teus Pés
+                Através da Leitura Cristã Direcionada
               </p>
             </div>
           </div>
@@ -44,35 +53,31 @@ const Hero = () => {
           {/* Description */}
           <div className="mb-16 max-w-3xl">
             <p className="text-white/95 text-xl md:text-2xl leading-relaxed font-light">
-              Onde a <span className="font-semibold text-gold">Palavra de Deus</span> encontra 
-              a sabedoria dos livros. Um ministério masculino <strong className="text-gold">exclusivo para 
-              membros das igrejas COGIC no Brasil</strong>, dedicado ao crescimento espiritual 
-              e intelectual através da leitura, discussão e irmandade cristã.
+              Junte-se a homens cristãos comprometidos em <span className="font-semibold text-gold">crescer espiritualmente 
+              e intelectualmente</span> através do estudo de livros que transformam vidas e fortalecem a fé. 
+              <strong className="text-gold">Exclusivo para membros das igrejas COGIC no Brasil.</strong>
             </p>
           </div>
 
           {/* Main CTA */}
           <div className="mb-20">
-            <p className="text-white/80 text-lg mb-6 font-medium">
-              <span className="text-gold">Verbo</span> = Palavra de Deus | <span className="text-gold">Verso</span> = Literatura & Poesia
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6">
+            <div className="flex flex-col gap-4 mb-8">
               <Button
                 size="lg"
-                className="bg-gold hover:bg-gold-dark text-burgundy font-semibold px-10 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-gold border-0 group"
+                className="bg-burgundy hover:bg-burgundy/90 text-white font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group"
                 onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
-                Quero Participar
-                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                QUERO PARTICIPAR AGORA
+                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button
-                variant="outline"
                 size="lg"
-                className="border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-10 py-4 text-lg rounded-full backdrop-blur-sm font-medium transition-all duration-300 hover:scale-105 group"
+                className="bg-white text-burgundy hover:bg-white/90 font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group"
+                onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
-                <BookOpen className="mr-3 h-5 w-5 group-hover:scale-110 transition-transform" />
-                Saiba Mais
+                QUERO PARTICIPAR AGORA
+                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
