@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, Calendar } from "lucide-react";
-import bookClubHero from "@/assets/book-club-hero.jpg";
+import cogicMenDiscussion from "@/assets/cogic-men-discussion.jpg";
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${bookClubHero})` }}
+        style={{ backgroundImage: `url(${cogicMenDiscussion})` }}
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-85"></div>
       </div>
@@ -45,7 +45,8 @@ const Hero = () => {
           <div className="mb-16 max-w-3xl">
             <p className="text-white/95 text-xl md:text-2xl leading-relaxed font-light">
               Onde a <span className="font-semibold text-gold">Palavra de Deus</span> encontra 
-              a sabedoria dos livros. Um ministério masculino dedicado ao crescimento espiritual 
+              a sabedoria dos livros. Um ministério masculino <strong className="text-gold">exclusivo para 
+              membros das igrejas COGIC no Brasil</strong>, dedicado ao crescimento espiritual 
               e intelectual através da leitura, discussão e irmandade cristã.
             </p>
           </div>

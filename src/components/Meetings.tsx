@@ -84,7 +84,7 @@ const Meetings = () => {
           <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
           <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
             Momentos de comunhão, aprendizado e crescimento mútuo através de discussões 
-            profundas sobre fé, literatura e vida cristã.
+            profundas sobre fé, literatura e vida cristã entre irmãos das igrejas COGIC no Brasil.
           </p>
         </div>
 

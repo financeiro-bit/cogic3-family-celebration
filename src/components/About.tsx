@@ -1,187 +1,182 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Users, Globe, BookOpen, ExternalLink } from "lucide-react";
+import { Users, Heart, BookOpen, Target, Lightbulb, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import cogicLibraryStudy from "@/assets/cogic-library-study.jpg";
 
 const About = () => {
-  return (
-    <section id="about" className="py-32 bg-gradient-subtle relative overflow-hidden">
-      <div className="container mx-auto px-8">
-        <div className="max-w-7xl mx-auto">
-          
-          {/* Main Content - Reino Style Layout */}
-          <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">
-            
-            {/* Left Side - Large Text */}
-            <div className="space-y-12">
-              <div>
-                <h2 className="text-reino-brown text-5xl md:text-6xl lg:text-7xl font-light leading-tight">
-                  <span className="font-bold">Vivendo</span> o ordinário de forma{" "}
-                  <span className="font-bold text-reino-gold">extraordinária</span>
-                </h2>
-              </div>
-              
-              <div className="space-y-8">
-                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed font-light">
-                  Nossa essência não está em doutrinas ou rituais, mas em uma cultura de excelência, 
-                  que nos leva a manifestar a vida de Cristo em todos os aspectos da nossa existência.
-                </p>
-                
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-0.5 bg-reino-gold"></div>
-                  <p className="text-reino-brown font-medium tracking-wide">
-                    com liberdade, relevância e profundidade na palavra
-                  </p>
-                </div>
-              </div>
-            </div>
+  const values = [
+    {
+      icon: BookOpen,
+      title: "Verbo",
+      subtitle: "Palavra de Deus",
+      description: "Fundamentação bíblica em todas as nossas discussões e escolhas"
+    },
+    {
+      icon: Heart,
+      title: "Verso",
+      subtitle: "Literatura & Poesia",
+      description: "Apreciação da riqueza literária e sabedoria dos grandes autores"
+    },
+    {
+      icon: Users,
+      title: "Irmandade",
+      subtitle: "Comunhão COGIC",
+      description: "Ambiente seguro para crescimento e apoio mútuo entre homens cristãos COGIC"
+    },
+    {
+      icon: Target,
+      title: "Crescimento",
+      subtitle: "Desenvolvimento Integral",
+      description: "Transformação pessoal através do conhecimento e da fé cristã"
+    }
+  ];
 
-            {/* Right Side - Content */}
-            <div className="space-y-8">
-              <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-10 shadow-soft border border-white/50">
-                <h3 className="font-serif text-3xl font-bold text-reino-brown mb-6">
-                  Nossa História
-                </h3>
-                <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                  <p>
-                    A Igreja Evangélica Prostrados aos Teus Pés nasceu em <strong className="text-reino-brown">15 de maio de 2011</strong>, 
-                    começando humildemente em uma pequena sala residencial dos Pastores Paulo e Rosângela. 
-                    O que começou como um pequeno grupo de fé cresceu pela graça de Deus.
-                  </p>
-                  <p>
-                    Nossa jornada passou por um salão emprestado por nosso irmão Batista, até encontrarmos 
-                    nossa sede atual, inaugurada em <strong className="text-reino-brown">13 de outubro de 2011</strong>. 
-                    Deus cumpriu suas promessas sobrenaturais e nos deu um lugar para adorá-Lo.
-                  </p>
-                  <p>
-                    Somos uma igreja com <strong className="text-reino-gold">visão de Reino</strong> - não competimos 
-                    com outras igrejas, mas lutamos juntos para arrebanhar almas para o Rei da Glória.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-reino-beige/50 rounded-3xl p-8 border border-reino-beige">
-                <blockquote className="text-reino-brown font-medium italic text-xl leading-relaxed">
-                  "Temos visão de Reino, onde ninguém é maior que ninguém. Não competimos com outras igrejas, 
-                  mas lutamos juntos para arrebanhar almas para o Rei da Glória."
-                </blockquote>
-                <footer className="mt-4 text-reino-gold font-medium">- Pastor Paulo</footer>
-              </div>
+  return (
+    <section id="about" className="py-24 bg-background">
+      <div className="container mx-auto px-8">
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h2 className="font-serif-elegant text-4xl md:text-5xl font-bold text-burgundy mb-6">
+            Sobre o Clube
+          </h2>
+          <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
+          <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
+            Um ministério masculino cristão exclusivo para membros das <strong className="text-burgundy">igrejas COGIC no Brasil</strong>, 
+            dedicado ao crescimento espiritual e intelectual através da literatura, fundamentado na Palavra de Deus.
+          </p>
+        </div>
+
+        {/* Main Content */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          {/* Image */}
+          <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+              <img 
+                src={cogicLibraryStudy} 
+                alt="Homens COGIC de diferentes etnias estudando juntos" 
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-elegant opacity-20"></div>
+            </div>
+            <div className="absolute -bottom-6 -right-6 bg-gold text-burgundy p-6 rounded-2xl shadow-gold">
+              <Lightbulb className="h-8 w-8" />
             </div>
           </div>
 
-          {/* COGIC Affiliation Section */}
-          <div className="mb-32">
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-soft border border-white/50">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <div className="flex items-center space-x-3 mb-6">
-                    <div className="w-12 h-0.5 bg-reino-gold"></div>
-                    <p className="text-reino-gold font-medium tracking-[0.2em] text-sm uppercase">
-                      NOSSA FILIAÇÃO
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-serif-elegant text-3xl font-bold text-burgundy mb-6">
+                Nossa História
+              </h3>
+              <div className="space-y-6 text-muted-foreground leading-relaxed">
+                <p>
+                  O <strong className="text-burgundy">Clube do Livro Verbo & Verso</strong> nasceu 
+                  da visão de criar um espaço exclusivo onde homens cristãos <strong className="text-burgundy">membros 
+                  das igrejas COGIC no Brasil</strong> pudessem unir o amor pela Palavra de Deus com a paixão pela literatura.
+                </p>
+                <p>
+                  Conectado à <strong className="text-burgundy">COGIC3 Prostrados aos Teus Pés</strong>, 
+                  nosso ministério busca formar homens de todas as etnias através da leitura, discussão e irmandade, 
+                  promovendo crescimento espiritual e intelectual dentro da tradição COGIC.
+                </p>
+                <p>
+                  <strong className="text-gold">Requisito:</strong> Para participar, é necessário ser membro ativo 
+                  de uma das igrejas COGIC (Church of God in Christ) no Brasil, garantindo a unidade 
+                  doutrinária e espiritual do grupo.
+                </p>
+                <p>
+                  Cada encontro é uma oportunidade de descobrir como a sabedoria dos livros 
+                  pode enriquecer nossa compreensão da fé e da vida cristã.
+                </p>
+              </div>
+            </div>
+
+            <Button 
+              size="lg"
+              className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
+            >
+              Conheça Nossa Comunidade
+              <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </Button>
+          </div>
+        </div>
+
+        {/* Mission & Vision */}
+        <div className="grid md:grid-cols-2 gap-12 mb-20">
+          <div className="bg-burgundy-light/10 rounded-2xl p-8 border border-burgundy/10">
+            <h4 className="font-serif-elegant text-2xl font-bold text-burgundy mb-4">
+              Nossa Missão
+            </h4>
+            <p className="text-muted-foreground leading-relaxed">
+              Promover o crescimento espiritual e intelectual de homens cristãos membros das 
+              igrejas COGIC no Brasil através da leitura, discussão e irmandade, unindo a Palavra 
+              de Deus com a riqueza da literatura.
+            </p>
+          </div>
+
+          <div className="bg-gold-light/10 rounded-2xl p-8 border border-gold/20">
+            <h4 className="font-serif-elegant text-2xl font-bold text-burgundy mb-4">
+              Nossa Visão
+            </h4>
+            <p className="text-muted-foreground leading-relaxed">
+              Ser referência em formação masculina cristã através da literatura dentro da tradição COGIC, 
+              criando uma comunidade de homens de todas as etnias transformados pelo conhecimento e pela fé, 
+              fortalecendo a irmandade entre as igrejas COGIC no Brasil.
+            </p>
+          </div>
+        </div>
+
+        {/* Values */}
+        <div>
+          <h3 className="font-serif-elegant text-3xl font-bold text-burgundy text-center mb-12">
+            Nossos Valores
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const Icon = value.icon;
+              return (
+                <div key={index} className="text-center group">
+                  <div className="bg-white rounded-2xl p-8 shadow-elegant hover:shadow-gold transition-all duration-300 group-hover:scale-105 border border-burgundy/10">
+                    <div className="w-16 h-16 bg-burgundy rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-gold transition-colors duration-300">
+                      <Icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h4 className="font-serif-elegant text-xl font-bold text-burgundy mb-2">
+                      {value.title}
+                    </h4>
+                    <p className="text-gold font-medium mb-3">{value.subtitle}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {value.description}
                     </p>
                   </div>
-                  <h3 className="text-reino-brown text-4xl md:text-5xl font-light leading-tight mb-6">
-                    Parte da <span className="font-bold">COGIC</span>
-                  </h3>
-                  <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                    Somos orgulhosamente filiados à Church of God in Christ (COGIC), 
-                    uma das maiores denominações pentecostais do mundo, fundada em 1907 
-                    e sediada em Memphis, Tennessee - EUA.
-                  </p>
-                  <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
-                      <span className="text-muted-foreground">Fundada em 1907 nos Estados Unidos</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
-                      <span className="text-muted-foreground">Sede mundial em Memphis, Tennessee</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 bg-reino-gold rounded-full"></div>
-                      <span className="text-muted-foreground">Tradição pentecostal histórica</span>
-                    </div>
-                  </div>
                 </div>
-                
-                <div className="text-center">
-                  <div className="bg-reino-brown/5 rounded-2xl p-8 mb-6">
-                    <div className="w-24 h-24 bg-reino-brown rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-white font-bold text-2xl">COGIC</span>
-                    </div>
-                    <h4 className="font-bold text-reino-brown text-xl mb-2">Church of God in Christ</h4>
-                    <p className="text-muted-foreground">Memphis, Tennessee - EUA</p>
-                  </div>
-                  <Button
-                    variant="outline"
-                    className="border-2 border-reino-brown text-reino-brown hover:bg-reino-brown hover:text-white transition-all duration-300"
-                    onClick={() => window.open('https://www.cogic.org/', '_blank')}
-                  >
-                    Visite o Site Oficial
-                    <ExternalLink className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
+        </div>
 
-          {/* Values Grid - Clean Design */}
-          <div className="mb-20">
-            <div className="text-center mb-16">
-              <p className="text-reino-gold font-medium tracking-[0.2em] text-sm uppercase mb-4">
-                NOSSOS VALORES
-              </p>
-              <h3 className="text-reino-brown text-4xl md:text-5xl font-light">
-                O que nos <span className="font-bold">move</span>
-              </h3>
+        {/* COGIC Requirement Notice */}
+        <div className="mt-20 bg-gradient-elegant rounded-3xl p-12 text-center text-white">
+          <Users className="h-16 w-16 mx-auto mb-6 text-gold" />
+          <h3 className="font-serif-elegant text-2xl font-bold mb-4">
+            Exclusivo para Membros COGIC
+          </h3>
+          <p className="text-white/90 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+            Este ministério é destinado exclusivamente a homens cristãos que são membros ativos 
+            das igrejas COGIC (Church of God in Christ) no Brasil. Esta exclusividade garante 
+            nossa unidade doutrinária, espiritual e fortalece os laços entre os irmãos da denominação.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div className="bg-white/10 rounded-xl p-4">
+              <BookOpen className="h-8 w-8 mx-auto mb-2 text-gold" />
+              <p className="font-medium">Unidade Doutrinária</p>
             </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                {
-                  icon: Heart,
-                  title: "Amor",
-                  description: "Demonstramos o amor de Cristo através de ações concretas.",
-                },
-                {
-                  icon: Users,
-                  title: "Comunidade",
-                  description: "Uma família unida em Cristo, onde todos encontram seu lugar.",
-                },
-                {
-                  icon: Globe,
-                  title: "Missão",
-                  description: "Levamos o evangelho até os confins da terra.",
-                },
-                {
-                  icon: BookOpen,
-                  title: "Palavra",
-                  description: "Fundamentados nas Sagradas Escrituras.",
-                }
-              ].map((value, index) => (
-                <div key={index} className="group text-center">
-                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-subtle hover:shadow-soft transition-all duration-500 border border-white/50 group-hover:scale-105">
-                    <div className="bg-reino-gold/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-reino-gold/20 transition-colors duration-300">
-                      <value.icon className="h-8 w-8 text-reino-gold" />
-                    </div>
-                    <h4 className="font-bold text-reino-brown mb-4 text-xl">{value.title}</h4>
-                    <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="bg-white/10 rounded-xl p-4">
+              <Heart className="h-8 w-8 mx-auto mb-2 text-gold" />
+              <p className="font-medium">Irmandade COGIC</p>
             </div>
-          </div>
-
-          {/* Call to Action - Reino Style */}
-          <div className="text-center bg-reino-brown rounded-3xl p-16 text-white">
-            <h3 className="text-4xl md:text-5xl font-light mb-6">
-              Adorar é a <span className="font-bold text-reino-gold">nossa essência!</span>
-            </h3>
-            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Venha fazer parte de uma comunidade que vive a presença de Deus de forma autêntica e transformadora.
-            </p>
-            <div className="flex justify-center">
-              <div className="w-24 h-0.5 bg-reino-gold"></div>
+            <div className="bg-white/10 rounded-xl p-4">
+              <Target className="h-8 w-8 mx-auto mb-2 text-gold" />
+              <p className="font-medium">Crescimento Conjunto</p>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, BookOpen, Users, Calendar, MapPin, MessageCircle } from "lucide-react";
-import verboVersoLogo from "@/assets/verbo-verso-logo.png";
+import verboVersoLogo from "@/assets/verbo-verso-logo-original.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
