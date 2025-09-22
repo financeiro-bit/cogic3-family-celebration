@@ -282,9 +282,9 @@ const Meetings = () => {
                 Homens cristãos são bem-vindos!
               </p>
               <Button 
-                variant="outline" 
+                variant="default" 
                 size="lg"
-                className="border-white/30 text-white hover:bg-white hover:text-burgundy"
+                className="bg-white text-burgundy hover:bg-white/90 font-medium border-0"
                 onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
                 Quero Participar
