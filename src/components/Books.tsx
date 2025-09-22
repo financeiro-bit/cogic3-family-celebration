@@ -236,9 +236,9 @@ const Books = () => {
                   para membros das igrejas COGIC no Brasil.
                 </p>
                 <Button 
-                  variant="outline" 
+                  variant="default" 
                   size="sm"
-                  className="border-white/30 text-white hover:bg-white hover:text-burgundy"
+                  className="bg-white text-burgundy hover:bg-white/90 font-medium border-0"
                   onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
                 >
                   Baixar PDF Atual
