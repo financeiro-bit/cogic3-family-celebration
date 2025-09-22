@@ -23,15 +23,15 @@ const Books = () => {
 
   const upcomingBooks = [
     {
-      title: "Desiring God",
-      author: "John Piper",
-      category: "Espiritualidade",
-      month: "Janeiro 2026"
-    },
-    {
       title: "As Confissões",
       author: "Santo Agostinho",
       category: "Biografia Espiritual",
+      month: "Janeiro 2026"
+    },
+    {
+      title: "O Peregrino",
+      author: "John Bunyan",
+      category: "Literatura Cristã Clássica",
       month: "Março 2026"
     }
   ];
