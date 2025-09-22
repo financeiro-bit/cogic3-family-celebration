@@ -4,51 +4,53 @@ import { Badge } from "@/components/ui/badge";
 
 const Meetings = () => {
   const nextMeeting = {
-    date: "30 de Novembro, 2024",
-    time: "16h00 - 18h00",
-    location: "Igreja COGIC3 Prostrados aos Teus Pés",
-    address: "Casa Verde Alta - São Paulo/SP",
+    date: "15 de Dezembro, 2024",
+    time: "20h00 - 21h30",
+    location: "Google Meet - Sala Privada",
+    address: "Link será enviado por WhatsApp",
     topic: "Cristianismo Puro e Simples - Capítulos 8-12",
     discussion: "A Moral Cristã e o Comportamento",
     attendees: 12,
-    maxAttendees: 15
+    maxAttendees: 20,
+    readingPeriod: "14 dias para leitura dos capítulos"
   };
 
   const agenda = [
-    { time: "16h00 - 16h15", activity: "Recepção e Confraternização", type: "social" },
-    { time: "16h15 - 16h30", activity: "Oração de Abertura e Devoção", type: "spiritual" },
-    { time: "16h30 - 17h30", activity: "Discussão do Livro", type: "main" },
-    { time: "17h30 - 17h45", activity: "Reflexões Pessoais", type: "reflection" },
-    { time: "17h45 - 18h00", activity: "Próximos Passos e Oração Final", type: "closing" }
+    { time: "20h00 - 20h10", activity: "Recepção e Confraternização Online", type: "social" },
+    { time: "20h10 - 20h20", activity: "Oração de Abertura e Devoção", type: "spiritual" },
+    { time: "20h20 - 21h10", activity: "Discussão dos Capítulos Lidos", type: "main" },
+    { time: "21h10 - 21h20", activity: "Reflexões Pessoais e Partilhas", type: "reflection" },
+    { time: "21h20 - 21h30", activity: "Próximos Capítulos e Oração Final", type: "closing" }
   ];
 
   const upcomingMeetings = [
     {
-      date: "28 de Dezembro",
+      date: "30 de Dezembro",
       book: "Desiring God",
-      topic: "A Busca pela Felicidade em Deus",
+      topic: "A Busca pela Felicidade em Deus - Capítulos 1-4",
       status: "confirmed"
     },
     {
-      date: "25 de Janeiro",
-      book: "As Confissões",
-      topic: "O Caminho para Deus",
-      status: "planning"
+      date: "15 de Janeiro",
+      book: "Desiring God",
+      topic: "A Busca pela Felicidade em Deus - Capítulos 5-8",
+      status: "confirmed"
     },
     {
-      date: "22 de Fevereiro",
-      book: "A ser definido",
-      topic: "Votação do próximo livro",
-      status: "voting"
+      date: "30 de Janeiro",
+      book: "As Confissões",
+      topic: "O Caminho para Deus - Início",
+      status: "planning"
     }
   ];
 
   const participationRules = [
-    "Leitura prévia dos capítulos programados",
-    "Respeito às opiniões e experiências de todos",
-    "Participação ativa nas discussões",
-    "Pontualidade nos encontros",
-    "Confidencialidade das partilhas pessoais"
+    "Leitura prévia dos capítulos programados em 14 dias",
+    "Participação pontual nos encontros online às 20h",
+    "Respeito às opiniões e experiências de todos os irmãos",
+    "Participação ativa nas discussões via Google Meet",
+    "Confidencialidade das partilhas pessoais",
+    "Microfone desligado quando não estiver falando"
   ];
 
   const getActivityIcon = (type: string) => {
@@ -142,16 +144,21 @@ const Meetings = () => {
                         <p className="font-medium text-burgundy">
                           {nextMeeting.attendees}/{nextMeeting.maxAttendees} confirmados
                         </p>
-                        <p className="text-sm text-muted-foreground">Participantes</p>
+                        <p className="text-sm text-muted-foreground">Participantes online</p>
                       </div>
                     </div>
                   </div>
 
                   <div className="bg-burgundy-light/10 rounded-xl p-6 mb-8">
                     <h4 className="font-semibold text-burgundy mb-3">Foco da Discussão:</h4>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed mb-4">
                       {nextMeeting.discussion}
                     </p>
+                    <div className="bg-gold/10 rounded-lg p-4 border border-gold/20">
+                      <p className="text-sm font-medium text-gold">
+                        📚 {nextMeeting.readingPeriod}
+                      </p>
+                    </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -168,7 +175,7 @@ const Meetings = () => {
                       size="lg"
                       className="border-gold text-gold hover:bg-gold hover:text-burgundy"
                     >
-                      Ver Localização
+                      Acessar Google Meet
                       <MapPin className="ml-2 h-5 w-5" />
                     </Button>
                   </div>

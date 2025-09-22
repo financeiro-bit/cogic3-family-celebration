@@ -24,13 +24,13 @@ const Header = () => {
             <img 
               src={verboVersoLogo} 
               alt="Clube do Livro Verbo & Verso" 
-              className="h-12 w-12"
+              className="h-16 w-16 md:h-20 md:w-20"
             />
-            <div className="hidden md:block">
-              <h1 className="font-serif-elegant text-xl font-bold text-burgundy">
+            <div className="hidden sm:block">
+              <h1 className="font-serif-elegant text-xl md:text-2xl font-bold text-burgundy">
                 Verbo & Verso
               </h1>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 COGIC3 Prostrados aos Teus Pés
               </p>
             </div>

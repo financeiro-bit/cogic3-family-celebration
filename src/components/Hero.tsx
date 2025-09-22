@@ -81,21 +81,21 @@ const Hero = () => {
             {[
               { 
                 icon: BookOpen, 
-                title: "Leitura Mensal", 
-                subtitle: "Um livro por mês",
-                description: "Seleção democrática" 
+                title: "Leitura Quinzenal", 
+                subtitle: "14 dias para ler",
+                description: "Capítulos programados" 
               },
               { 
                 icon: Users, 
-                title: "Encontros Presenciais", 
-                subtitle: "Últimos sábados",
-                description: "Discussões profundas" 
+                title: "Encontros Online", 
+                subtitle: "De 15 em 15 dias",
+                description: "Google Meet às 20h" 
               },
               { 
                 icon: Calendar, 
                 title: "Próximo Encontro", 
-                subtitle: "30 de Novembro",
-                description: "16h na igreja" 
+                subtitle: "15 de Dezembro",
+                description: "20h - Sala privada" 
               }
             ].map((item, index) => {
               const Icon = item.icon;
