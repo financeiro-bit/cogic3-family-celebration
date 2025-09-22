@@ -37,15 +37,15 @@ const Hero = () => {
           <div className="mb-12">
             <div className="mb-6">
               <h1 className="font-serif-elegant text-white text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
-                <span className="block text-gold animate-fade-in">Transforme</span>
-                <span className="block text-white animate-fade-in">Sua Vida</span>
-                <span className="block text-gold animate-fade-in">em 4 Meses</span>
+                <span className="block text-gold animate-fade-in">Estude 1 Livro</span>
+                <span className="block text-white animate-fade-in">em 4 Meses</span>
+                <span className="block text-gold animate-fade-in">Com Profundidade</span>
               </h1>
             </div>
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-0.5 bg-gold"></div>
               <p className="text-gold font-medium tracking-[0.2em] text-lg uppercase">
-                Através da Leitura Cristã Direcionada
+                Leitura Quinzenal | 7 Encontros em 4 Meses
               </p>
             </div>
           </div>
@@ -53,9 +53,9 @@ const Hero = () => {
           {/* Description */}
           <div className="mb-16 max-w-3xl">
             <p className="text-white/95 text-xl md:text-2xl leading-relaxed font-light">
-              Junte-se a homens cristãos comprometidos em <span className="font-semibold text-gold">crescer espiritualmente 
-              e intelectualmente</span> através do estudo de livros que transformam vidas e fortalecem a fé. 
-              <strong className="text-gold">Exclusivo para membros das igrejas COGIC no Brasil.</strong>
+              Junte-se a homens cristãos para estudar <span className="font-semibold text-gold">1 livro em 4 meses</span> 
+              com profundidade e discussões quinzenais. Uma jornada de <strong className="text-gold">crescimento espiritual 
+              e intelectual exclusiva para membros das igrejas COGIC no Brasil.</strong>
             </p>
           </div>
 
@@ -65,15 +65,6 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-burgundy hover:bg-burgundy/90 text-white font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group"
-                onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
-              >
-                QUERO PARTICIPAR AGORA
-                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              
-              <Button
-                size="lg"
-                className="bg-white text-burgundy hover:bg-white/90 font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group"
                 onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
                 QUERO PARTICIPAR AGORA
@@ -93,15 +84,15 @@ const Hero = () => {
               },
               { 
                 icon: Users, 
-                title: "Encontros Online", 
+                title: "7 Encontros Online", 
                 subtitle: "De 15 em 15 dias",
                 description: "Google Meet às 20h" 
               },
               { 
                 icon: Calendar, 
                 title: "Próximo Encontro", 
-                subtitle: "15 de Dezembro",
-                description: "20h - Sala privada" 
+                subtitle: "01 de Outubro",
+                description: "20h - Reunião de Abertura" 
               }
             ].map((item, index) => {
               const Icon = item.icon;

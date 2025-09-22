@@ -29,15 +29,15 @@ const ProgramStructure = () => {
               <div className="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <Book className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-burgundy mb-2">4 Livros</h3>
-              <p className="text-burgundy/70">1 livro cuidadosamente selecionado por mês</p>
+              <h3 className="text-xl font-bold text-burgundy mb-2">1 Livro</h3>
+              <p className="text-burgundy/70">Um livro em 4 meses com profundidade</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-burgundy rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-burgundy mb-2">8 Encontros</h3>
-              <p className="text-burgundy/70">2 encontros presenciais por mês</p>
+              <h3 className="text-xl font-bold text-burgundy mb-2">7 Encontros</h3>
+              <p className="text-burgundy/70">Discussões quinzenais aprofundadas</p>
             </div>
             <div className="text-center">
               <div className="w-20 h-20 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
@@ -95,16 +95,18 @@ const ProgramStructure = () => {
             <Button 
               size="lg" 
               className="bg-white text-burgundy hover:bg-white/90 px-10 py-6 text-xl font-bold"
+              onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
             >
-              GARANTIR MINHA VAGA
+              QUERO PARTICIPAR
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="border-white text-white hover:bg-white/10 px-10 py-6 text-xl font-bold"
+              onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
             >
-              BAIXAR CRONOGRAMA
+              BAIXAR PDF DO LIVRO
             </Button>
           </div>
         </div>
