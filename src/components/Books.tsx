@@ -136,6 +136,7 @@ const Books = () => {
                       <Button 
                         size="lg"
                         className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
+                        onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
                       >
                         Baixar PDF Gratuito
                         <BookOpen className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
@@ -275,8 +276,9 @@ const Books = () => {
                   variant="outline" 
                   size="sm"
                   className="border-white/30 text-white hover:bg-white hover:text-burgundy"
+                  onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
                 >
-                  Solicitar PDF Atual
+                  Baixar PDF Atual
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
