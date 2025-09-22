@@ -165,6 +165,7 @@ const Meetings = () => {
                     <Button 
                       size="lg"
                       className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
+                      onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
                     >
                       Confirmar Presença
                       <CheckCircle className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
@@ -284,6 +285,7 @@ const Meetings = () => {
                 variant="outline" 
                 size="lg"
                 className="border-white/30 text-white hover:bg-white hover:text-burgundy"
+                onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
                 Quero Participar
                 <ArrowRight className="ml-2 h-5 w-5" />

@@ -146,6 +146,7 @@ const Books = () => {
                         variant="outline" 
                         size="lg"
                         className="border-burgundy text-burgundy hover:bg-burgundy hover:text-white"
+                        onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
                       >
                         Participar da Discussão
                         <Users className="ml-2 h-5 w-5" />

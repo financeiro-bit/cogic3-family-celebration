@@ -379,6 +379,7 @@ const ReadingSchedule = () => {
             <Button 
               size="lg"
               className="bg-white text-burgundy hover:bg-white/90 font-medium"
+              onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
             >
               Confirmar Participação
               <ArrowRight className="ml-2 h-5 w-5" />

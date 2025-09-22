@@ -60,6 +60,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gold hover:bg-gold-dark text-burgundy font-semibold px-10 py-4 text-lg rounded-full transition-all duration-300 hover:scale-105 shadow-gold border-0 group"
+                onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
                 Quero Participar
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
