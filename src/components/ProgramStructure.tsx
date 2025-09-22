@@ -101,9 +101,8 @@ const ProgramStructure = () => {
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
             <Button 
-              variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white/10 px-10 py-6 text-xl font-bold"
+              className="bg-white text-burgundy hover:bg-white/90 border-2 border-white px-10 py-6 text-xl font-bold"
               onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
             >
               BAIXAR PDF DO LIVRO
