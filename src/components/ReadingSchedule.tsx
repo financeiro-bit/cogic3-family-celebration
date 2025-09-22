@@ -385,9 +385,9 @@ const ReadingSchedule = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
-              variant="outline" 
+              variant="default" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10"
+              className="bg-white text-burgundy hover:bg-white/90 font-medium border-0"
               onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
             >
               Baixar PDF do Livro
