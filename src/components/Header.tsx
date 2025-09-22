@@ -31,7 +31,7 @@ const Header = () => {
                 Verbo & Verso
               </h1>
               <p className="text-sm md:text-base text-muted-foreground">
-                COGIC3 Prostrados aos Teus Pés
+                Clube do Livro
               </p>
             </div>
           </div>
