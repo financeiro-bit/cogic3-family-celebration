@@ -4,15 +4,15 @@ import { Badge } from "@/components/ui/badge";
 
 const Meetings = () => {
   const nextMeeting = {
-    date: "15 de Dezembro, 2024",
+    date: "01 de Outubro, 2025",
     time: "20h00 - 21h30",
-    location: "Google Meet - Sala Privada",
-    address: "Link será enviado por WhatsApp",
-    topic: "O Vinho Novo é Melhor - Capítulos 1-6",
-    discussion: "A Transformação de um Marinheiro Alcoólatra",
-    attendees: 8,
+    location: "Primeira Reunião Presencial",
+    address: "Local será confirmado via WhatsApp",
+    topic: "Apresentação e Início do Clube",
+    discussion: "Apresentações pessoais e dinâmica do clube",
+    attendees: 0,
     maxAttendees: 20,
-    readingPeriod: "14 dias para leitura dos capítulos (1º a 15 de Dezembro)"
+    readingPeriod: "Apenas ler o Prefácio e Introdução (páginas 6-7)"
   };
 
   const agenda = [

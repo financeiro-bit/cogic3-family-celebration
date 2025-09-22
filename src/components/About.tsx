@@ -91,13 +91,6 @@ const About = () => {
               </div>
             </div>
 
-            <Button 
-              size="lg"
-              className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
-            >
-              Conheça Nossa Comunidade
-              <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </Button>
           </div>
         </div>
 

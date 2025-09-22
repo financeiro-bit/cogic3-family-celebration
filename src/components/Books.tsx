@@ -1,6 +1,7 @@
 import { BookOpen, Star, Calendar, Users, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import bookCover from "@/assets/o-vinho-novo-capa.jpg";
 
 const Books = () => {
   const currentBook = {
@@ -8,11 +9,11 @@ const Books = () => {
     author: "Robert Thom",
     category: "Biografia Cristã & Testemunho",
     description: "A história inspirativa de um marinheiro sul-africano e alcoólatra que descobriu o cristianismo e foi transformado em um verdadeiro homem de fé. Uma trajetória que prova que milagres acontecem ainda hoje.",
-    startDate: "1º de Dezembro",
-    endDate: "15 de Dezembro",
-    progress: 25,
-    nextMeeting: "15 de Dezembro - 20h",
-    pages: "216 páginas",
+    startDate: "1º de Outubro de 2025",
+    endDate: "15 de Outubro de 2025", 
+    progress: 0,
+    nextMeeting: "1º de Outubro de 2025 - 20h (Primeira Reunião Presencial)",
+    pages: "183 páginas",
     publisher: "Editora Vida",
     isbn: "978-8573671858",
     rating: 4.9,
@@ -48,21 +49,14 @@ const Books = () => {
       title: "Desiring God",
       author: "John Piper",
       category: "Espiritualidade",
-      month: "Janeiro 2025"
+      month: "Janeiro 2026"
     },
     {
       title: "As Confissões",
       author: "Santo Agostinho",
       category: "Biografia Espiritual",
-      month: "Março 2025"
+      month: "Março 2026"
     }
-  ];
-
-  const categories = [
-    { name: "Biografias & Testemunhos", count: 8, color: "bg-burgundy" },
-    { name: "Teologia & Espiritualidade", count: 12, color: "bg-gold" },
-    { name: "Literatura Clássica", count: 6, color: "bg-navy" },
-    { name: "Desenvolvimento Pessoal", count: 5, color: "bg-burgundy/70" }
   ];
 
   return (
@@ -85,8 +79,23 @@ const Books = () => {
         <div className="bg-white rounded-3xl shadow-elegant overflow-hidden mb-20">
           <div className="bg-gradient-elegant p-2">
             <div className="bg-white rounded-2xl p-8 md:p-12">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
+              <div className="grid lg:grid-cols-3 gap-12 items-center">
+                {/* Book Cover */}
+                <div className="lg:order-1 flex justify-center">
+                  <div className="relative">
+                    <img 
+                      src={bookCover} 
+                      alt="Capa do livro O Vinho Novo é Melhor"
+                      className="w-64 h-96 object-cover rounded-xl shadow-2xl"
+                    />
+                    <div className="absolute -bottom-4 -right-4 bg-gold text-burgundy rounded-full w-16 h-16 flex items-center justify-center font-bold text-sm shadow-lg">
+                      PDF<br/>Grátis
+                    </div>
+                  </div>
+                </div>
+
+                {/* Book Info */}
+                <div className="lg:col-span-2 lg:order-2">
                   <Badge className="bg-gold text-burgundy font-medium mb-4">
                     📚 Leitura Atual • PDF Gratuito Disponível
                   </Badge>
@@ -117,89 +126,42 @@ const Books = () => {
                     {currentBook.description}
                   </p>
 
-                  <div className="space-y-6">
-                    {/* Progress */}
-                    <div>
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-medium text-burgundy">Progresso da Leitura</span>
-                        <span className="text-sm text-muted-foreground">{currentBook.progress}%</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-3">
-                        <div 
-                          className="bg-gradient-gold h-3 rounded-full transition-all duration-500" 
-                          style={{ width: `${currentBook.progress}%` }}
-                        ></div>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <Button 
-                        size="lg"
-                        className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
-                        onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
-                      >
-                        Baixar PDF Gratuito
-                        <BookOpen className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                      </Button>
-                      
-                      <Button 
-                        variant="outline" 
-                        size="lg"
-                        className="border-burgundy text-burgundy hover:bg-burgundy hover:text-white"
-                        onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
-                      >
-                        Participar da Discussão
-                        <Users className="ml-2 h-5 w-5" />
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-6">
-                  {/* Key Dates */}
-                  <div className="bg-burgundy-light/10 rounded-2xl p-6 border border-burgundy/10 mb-6">
+                  <div className="bg-burgundy/10 rounded-xl p-6 mb-8">
                     <h4 className="font-semibold text-burgundy mb-4 flex items-center">
                       <Clock className="h-5 w-5 mr-2" />
-                      Cronograma Quinzenal
+                      Cronograma do Clube
                     </h4>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Início da Leitura:</span>
+                        <span className="text-muted-foreground">Início do Clube:</span>
                         <span className="font-medium text-burgundy">{currentBook.startDate}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Encontro Online:</span>
-                        <span className="font-medium text-burgundy">{currentBook.endDate}</span>
-                      </div>
-                      <div className="border-t border-burgundy/10 pt-3">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Próxima Discussão:</span>
-                          <span className="font-medium text-gold">{currentBook.nextMeeting}</span>
-                        </div>
+                        <span className="text-muted-foreground">Primeira Reunião:</span>
+                        <span className="font-medium text-gold">{currentBook.nextMeeting}</span>
                       </div>
                     </div>
                   </div>
 
-                  {/* PDF Available Notice */}
-                  <div className="bg-gold-light/10 rounded-2xl p-6 border border-gold/20">
-                    <h4 className="font-semibold text-burgundy mb-4 flex items-center">
-                      <BookOpen className="h-5 w-5 mr-2" />
-                      Material Gratuito
-                    </h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-3 h-3 rounded-full bg-gold"></div>
-                        <span className="text-sm text-muted-foreground">PDF disponibilizado gratuitamente</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-3 h-3 rounded-full bg-burgundy"></div>
-                        <span className="text-sm text-muted-foreground">Enviado via WhatsApp para membros</span>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="w-3 h-3 rounded-full bg-navy"></div>
-                        <span className="text-sm text-muted-foreground">Acesso exclusivo para participantes COGIC</span>
-                      </div>
-                    </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button 
+                      size="lg"
+                      className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
+                      onClick={() => window.open('https://drive.google.com/file/d/1yqQjswpCiJku7oNEPghAG-AVYSCyJx1y/view?usp=drive_link', '_blank')}
+                    >
+                      Baixar PDF Gratuito
+                      <BookOpen className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                    </Button>
+                    
+                    <Button 
+                      variant="outline" 
+                      size="lg"
+                      className="border-burgundy text-burgundy hover:bg-burgundy hover:text-white"
+                      onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
+                    >
+                      Participar da Discussão
+                      <Users className="ml-2 h-5 w-5" />
+                    </Button>
                   </div>
                 </div>
               </div>
