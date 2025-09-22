@@ -1,99 +1,96 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.png";
+import { Menu, X, BookOpen, Users, Calendar, MapPin, MessageCircle } from "lucide-react";
+import verboVersoLogo from "@/assets/verbo-verso-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navItems = [
-    { label: "Início", href: "#home" },
-    { label: "Sobre", href: "#about" },
-    { label: "Louvor", href: "#worship" },
-    { label: "Fotos", href: "#gallery" },
-    { label: "Cultos", href: "#services" },
-    { label: "Localização", href: "#location" },
-    { label: "Conecte-se", href: "#contact" },
+  const navigation = [
+    { name: "Início", href: "#home", icon: BookOpen },
+    { name: "Sobre Nós", href: "#about", icon: Users },
+    { name: "Livros", href: "#books", icon: BookOpen },
+    { name: "Encontros", href: "#meetings", icon: Calendar },
+    { name: "Local", href: "#location", icon: MapPin },
+    { name: "Contato", href: "#contact", icon: MessageCircle },
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white/90 backdrop-blur-xl border-b border-border/30 z-50 shadow-subtle">
-      <div className="container mx-auto px-8">
-        <div className="flex items-center justify-between h-24">
-          {/* Logo - Reino Style */}
-          <div className="flex items-center group cursor-pointer">
-            <div className="relative">
-              <div className="w-14 h-14 bg-reino-brown rounded-full flex items-center justify-center shadow-soft group-hover:shadow-medium transition-all duration-500">
-                <img 
-                  src={logo} 
-                  alt="COGIC3" 
-                  className="h-8 w-8 brightness-0 invert transition-transform duration-300 group-hover:scale-110" 
-                />
-              </div>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-burgundy/10 shadow-elegant">
+      <div className="container mx-auto px-6">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <div className="flex items-center space-x-4">
+            <img 
+              src={verboVersoLogo} 
+              alt="Clube do Livro Verbo & Verso" 
+              className="h-12 w-12"
+            />
+            <div className="hidden md:block">
+              <h1 className="font-serif-elegant text-xl font-bold text-burgundy">
+                Verbo & Verso
+              </h1>
+              <p className="text-sm text-muted-foreground">
+                COGIC3 Prostrados aos Teus Pés
+              </p>
             </div>
           </div>
 
-          {/* Desktop Navigation - Minimal */}
-          <nav className="hidden md:flex items-center space-x-12">
-            {navItems.map((item) => (
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navigation.map((item) => (
               <a
-                key={item.label}
+                key={item.name}
                 href={item.href}
-                className="text-foreground/70 hover:text-foreground text-sm font-medium tracking-wide transition-all duration-300 relative group"
+                className="text-foreground hover:text-gold transition-colors duration-300 font-medium"
               >
-                {item.label}
-                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-reino-gold group-hover:w-full transition-all duration-300"></div>
+                {item.name}
               </a>
             ))}
+            <Button 
+              size="sm" 
+              className="bg-burgundy hover:bg-burgundy/90 text-white font-medium"
+            >
+              Participar
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden hover:bg-muted/50 p-3"
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2 text-burgundy"
           >
-            <div className="relative w-5 h-5">
-              <Menu 
-                className={`h-5 w-5 absolute transition-all duration-300 ${
-                  isMenuOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'
-                }`} 
-              />
-              <X 
-                className={`h-5 w-5 absolute transition-all duration-300 ${
-                  isMenuOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'
-                }`} 
-              />
-            </div>
-          </Button>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden transition-all duration-500 ease-out overflow-hidden ${
-          isMenuOpen 
-            ? 'max-h-80 opacity-100 pb-8' 
-            : 'max-h-0 opacity-0'
-        }`}>
-          <div className="border-t border-border/30 pt-8">
-            <nav className="space-y-6">
-              {navItems.map((item, index) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block text-foreground/70 hover:text-foreground font-medium transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
-                  style={{ 
-                    animationDelay: `${index * 100}ms`,
-                    animation: isMenuOpen ? 'fadeIn 0.5s ease-out forwards' : 'none'
-                  }}
-                >
-                  {item.label}
-                </a>
-              ))}
+        {isMenuOpen && (
+          <div className="lg:hidden py-6 border-t border-burgundy/10">
+            <nav className="flex flex-col space-y-4">
+              {navigation.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="flex items-center space-x-3 text-foreground hover:text-gold transition-colors duration-300 py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <Icon size={18} />
+                    <span>{item.name}</span>
+                  </a>
+                );
+              })}
+              <Button 
+                size="sm" 
+                className="bg-burgundy hover:bg-burgundy/90 text-white font-medium mt-4 w-fit"
+              >
+                Participar
+              </Button>
             </nav>
           </div>
-        </div>
+        )}
       </div>
     </header>
   );
