@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute top-0 left-0 right-0 bg-burgundy text-white py-3 z-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-sm md:text-base font-bold animate-pulse">
-            🔥 ÚLTIMOS DIAS - Inscrições abertas para a nova turma de 4 meses!
+            🎉 PRIMEIRA TURMA - Seja um dos pioneiros do Clube do Livro!
           </p>
         </div>
       </div>
@@ -84,13 +84,13 @@ const Hero = () => {
               },
               { 
                 icon: Users, 
-                title: "7 Encontros Online", 
-                subtitle: "De 15 em 15 dias",
-                description: "Google Meet às 20h" 
+                title: "Primeira Turma", 
+                subtitle: "Seja pioneiro",
+                description: "Faça parte da história" 
               },
               { 
                 icon: Calendar, 
-                title: "Próximo Encontro", 
+                title: "Início em Breve", 
                 subtitle: "01 de Outubro",
                 description: "20h - Reunião de Abertura" 
               }

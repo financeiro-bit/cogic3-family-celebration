@@ -5,7 +5,6 @@ import ProgramStructure from "@/components/ProgramStructure";
 import Books from "@/components/Books";
 import Meetings from "@/components/Meetings";
 import ReadingSchedule from "@/components/ReadingSchedule";
-import Testimonials from "@/components/Testimonials";
 import Founder from "@/components/Founder";
 import Location from "@/components/Location";
 import Footer from "@/components/Footer";
@@ -21,7 +20,6 @@ const Index = () => {
         <ProgramStructure />
       </div>
       <Books />
-      <Testimonials />
       <Meetings />
       <ReadingSchedule />
       <Founder />
