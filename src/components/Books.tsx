@@ -20,29 +20,6 @@ const Books = () => {
     reviews: "2.857 avaliações"
   };
 
-  const bookHistory = [
-    {
-      title: "Cristianismo Puro e Simples",
-      author: "C.S. Lewis",
-      category: "Teologia & Apologética",
-      rating: 4.7,
-      completed: true
-    },
-    {
-      title: "O Peregrino",
-      author: "John Bunyan",
-      category: "Literatura Cristã Clássica",
-      rating: 4.8,
-      completed: true
-    },
-    {
-      title: "Conhecendo a Deus",
-      author: "J.I. Packer",
-      category: "Teologia",
-      rating: 4.9,
-      completed: true
-    }
-  ];
 
   const upcomingBooks = [
     {
@@ -169,39 +146,8 @@ const Books = () => {
           </div>
         </div>
 
-        {/* Books Grid */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Books History */}
-          <div>
-            <h3 className="font-serif-elegant text-2xl font-bold text-burgundy mb-8 flex items-center">
-              <BookOpen className="h-6 w-6 mr-3 text-gold" />
-              Livros Já Lidos
-            </h3>
-            <div className="space-y-6">
-              {bookHistory.map((book, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 shadow-elegant hover:shadow-gold transition-all duration-300 group">
-                  <div className="flex justify-between items-start mb-3">
-                    <div>
-                      <h4 className="font-serif-elegant text-lg font-bold text-burgundy group-hover:text-gold transition-colors">
-                        {book.title}
-                      </h4>
-                      <p className="text-muted-foreground">por {book.author}</p>
-                    </div>
-                    <div className="flex items-center space-x-1 text-gold">
-                      <Star className="h-4 w-4 fill-current" />
-                      <span className="text-sm font-medium">{book.rating}</span>
-                    </div>
-                  </div>
-                  <Badge variant="outline" className="border-burgundy/30 text-burgundy/70 text-xs">
-                    {book.category}
-                  </Badge>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Upcoming Books */}
-          <div>
+        {/* Upcoming Books Section */}
+        <div className="max-w-2xl mx-auto">
             <h3 className="font-serif-elegant text-2xl font-bold text-burgundy mb-8 flex items-center">
               <Calendar className="h-6 w-6 mr-3 text-gold" />
               Próximas Leituras
@@ -245,7 +191,6 @@ const Books = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
-            </div>
           </div>
         </div>
       </div>
