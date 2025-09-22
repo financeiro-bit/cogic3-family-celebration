@@ -8,11 +8,11 @@ const Meetings = () => {
     time: "20h00 - 21h30",
     location: "Google Meet - Sala Privada",
     address: "Link será enviado por WhatsApp",
-    topic: "Cristianismo Puro e Simples - Capítulos 8-12",
-    discussion: "A Moral Cristã e o Comportamento",
-    attendees: 12,
+    topic: "O Vinho Novo é Melhor - Capítulos 1-6",
+    discussion: "A Transformação de um Marinheiro Alcoólatra",
+    attendees: 8,
     maxAttendees: 20,
-    readingPeriod: "14 dias para leitura dos capítulos"
+    readingPeriod: "14 dias para leitura dos capítulos (1º a 15 de Dezembro)"
   };
 
   const agenda = [

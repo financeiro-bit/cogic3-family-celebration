@@ -4,17 +4,29 @@ import { Badge } from "@/components/ui/badge";
 
 const Books = () => {
   const currentBook = {
-    title: "Cristianismo Puro e Simples",
-    author: "C.S. Lewis",
-    category: "Teologia & Apologética",
-    description: "Uma obra clássica que apresenta os fundamentos da fé cristã de forma clara e acessível, explorando as verdades centrais do cristianismo.",
-    startDate: "1º de Novembro",
-    endDate: "30 de Novembro",
-    progress: 65,
-    nextMeeting: "30 de Novembro - 16h"
+    title: "O Vinho Novo é Melhor",
+    author: "Robert Thom",
+    category: "Biografia Cristã & Testemunho",
+    description: "A história inspirativa de um marinheiro sul-africano e alcoólatra que descobriu o cristianismo e foi transformado em um verdadeiro homem de fé. Uma trajetória que prova que milagres acontecem ainda hoje.",
+    startDate: "1º de Dezembro",
+    endDate: "15 de Dezembro",
+    progress: 25,
+    nextMeeting: "15 de Dezembro - 20h",
+    pages: "216 páginas",
+    publisher: "Editora Vida",
+    isbn: "978-8573671858",
+    rating: 4.9,
+    reviews: "2.857 avaliações"
   };
 
   const bookHistory = [
+    {
+      title: "Cristianismo Puro e Simples",
+      author: "C.S. Lewis",
+      category: "Teologia & Apologética",
+      rating: 4.7,
+      completed: true
+    },
     {
       title: "O Peregrino",
       author: "John Bunyan",
@@ -28,13 +40,6 @@ const Books = () => {
       category: "Teologia",
       rating: 4.9,
       completed: true
-    },
-    {
-      title: "A Cabana",
-      author: "William P. Young",
-      category: "Romance Cristão",
-      rating: 4.2,
-      completed: true
     }
   ];
 
@@ -43,19 +48,19 @@ const Books = () => {
       title: "Desiring God",
       author: "John Piper",
       category: "Espiritualidade",
-      month: "Dezembro 2024"
+      month: "Janeiro 2025"
     },
     {
       title: "As Confissões",
       author: "Santo Agostinho",
       category: "Biografia Espiritual",
-      month: "Janeiro 2025"
+      month: "Março 2025"
     }
   ];
 
   const categories = [
-    { name: "Teologia & Espiritualidade", count: 12, color: "bg-burgundy" },
-    { name: "Biografias Cristãs", count: 8, color: "bg-gold" },
+    { name: "Biografias & Testemunhos", count: 8, color: "bg-burgundy" },
+    { name: "Teologia & Espiritualidade", count: 12, color: "bg-gold" },
     { name: "Literatura Clássica", count: 6, color: "bg-navy" },
     { name: "Desenvolvimento Pessoal", count: 5, color: "bg-burgundy/70" }
   ];
@@ -70,8 +75,9 @@ const Books = () => {
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
           <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-            Descubra os livros que estão transformando nossa comunidade e junte-se às discussões 
-            que enriquecem nossa fé e conhecimento.
+            Descubra os livros que estão transformando nossa comunidade. Todos os livros são 
+            <strong className="text-burgundy"> disponibilizados gratuitamente em PDF</strong> para 
+            os participantes, e junte-se às discussões que enriquecem nossa fé e conhecimento.
           </p>
         </div>
 
@@ -82,16 +88,31 @@ const Books = () => {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <Badge className="bg-gold text-burgundy font-medium mb-4">
-                    📖 Leitura Atual
+                    📚 Leitura Atual • PDF Gratuito Disponível
                   </Badge>
                   <h3 className="font-serif-elegant text-3xl md:text-4xl font-bold text-burgundy mb-4">
                     {currentBook.title}
                   </h3>
                   <p className="text-gold font-medium text-lg mb-2">por {currentBook.author}</p>
-                  <Badge variant="outline" className="border-burgundy text-burgundy mb-6">
-                    {currentBook.category}
-                  </Badge>
+                  <div className="flex items-center space-x-4 mb-4">
+                    <Badge variant="outline" className="border-burgundy text-burgundy">
+                      {currentBook.category}
+                    </Badge>
+                    <div className="flex items-center space-x-1 text-gold">
+                      <Star className="h-4 w-4 fill-current" />
+                      <span className="text-sm font-medium">{currentBook.rating}</span>
+                      <span className="text-xs text-muted-foreground">({currentBook.reviews})</span>
+                    </div>
+                  </div>
                   
+                  <div className="bg-gold/10 rounded-xl p-4 border border-gold/20 mb-6">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-burgundy font-medium">📄 {currentBook.pages}</span>
+                      <span className="text-burgundy font-medium">📖 {currentBook.publisher}</span>
+                      <span className="text-muted-foreground">ISBN: {currentBook.isbn}</span>
+                    </div>
+                  </div>
+
                   <p className="text-muted-foreground leading-relaxed mb-8">
                     {currentBook.description}
                   </p>
@@ -116,8 +137,8 @@ const Books = () => {
                         size="lg"
                         className="bg-burgundy hover:bg-burgundy/90 text-white font-medium group"
                       >
-                        Participar da Discussão
-                        <Users className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                        Baixar PDF Gratuito
+                        <BookOpen className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                       </Button>
                       
                       <Button 
@@ -125,8 +146,8 @@ const Books = () => {
                         size="lg"
                         className="border-burgundy text-burgundy hover:bg-burgundy hover:text-white"
                       >
-                        Ver Cronograma
-                        <Calendar className="ml-2 h-5 w-5" />
+                        Participar da Discussão
+                        <Users className="ml-2 h-5 w-5" />
                       </Button>
                     </div>
                   </div>
@@ -134,42 +155,48 @@ const Books = () => {
 
                 <div className="space-y-6">
                   {/* Key Dates */}
-                  <div className="bg-burgundy-light/10 rounded-2xl p-6 border border-burgundy/10">
+                  <div className="bg-burgundy-light/10 rounded-2xl p-6 border border-burgundy/10 mb-6">
                     <h4 className="font-semibold text-burgundy mb-4 flex items-center">
                       <Clock className="h-5 w-5 mr-2" />
-                      Cronograma de Leitura
+                      Cronograma Quinzenal
                     </h4>
                     <div className="space-y-3">
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Início:</span>
+                        <span className="text-muted-foreground">Início da Leitura:</span>
                         <span className="font-medium text-burgundy">{currentBook.startDate}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-muted-foreground">Término:</span>
+                        <span className="text-muted-foreground">Encontro Online:</span>
                         <span className="font-medium text-burgundy">{currentBook.endDate}</span>
                       </div>
                       <div className="border-t border-burgundy/10 pt-3">
                         <div className="flex justify-between">
-                          <span className="text-muted-foreground">Próximo Encontro:</span>
+                          <span className="text-muted-foreground">Próxima Discussão:</span>
                           <span className="font-medium text-gold">{currentBook.nextMeeting}</span>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Categories */}
+                  {/* PDF Available Notice */}
                   <div className="bg-gold-light/10 rounded-2xl p-6 border border-gold/20">
-                    <h4 className="font-semibold text-burgundy mb-4">Categorias dos Livros</h4>
+                    <h4 className="font-semibold text-burgundy mb-4 flex items-center">
+                      <BookOpen className="h-5 w-5 mr-2" />
+                      Material Gratuito
+                    </h4>
                     <div className="space-y-3">
-                      {categories.map((category, index) => (
-                        <div key={index} className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3">
-                            <div className={`w-3 h-3 rounded-full ${category.color}`}></div>
-                            <span className="text-sm text-muted-foreground">{category.name}</span>
-                          </div>
-                          <span className="text-sm font-medium text-burgundy">{category.count}</span>
-                        </div>
-                      ))}
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 rounded-full bg-gold"></div>
+                        <span className="text-sm text-muted-foreground">PDF disponibilizado gratuitamente</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 rounded-full bg-burgundy"></div>
+                        <span className="text-sm text-muted-foreground">Enviado via WhatsApp para membros</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-3 h-3 rounded-full bg-navy"></div>
+                        <span className="text-sm text-muted-foreground">Acesso exclusivo para participantes COGIC</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -238,17 +265,18 @@ const Books = () => {
               <div className="bg-gradient-elegant rounded-xl p-6 text-white text-center">
                 <BookOpen className="h-8 w-8 mx-auto mb-4 text-gold" />
                 <h4 className="font-serif-elegant text-lg font-bold mb-2">
-                  Sugira um Livro
+                  PDFs Gratuitos para Membros
                 </h4>
                 <p className="text-white/90 text-sm mb-4">
-                  Tem alguma sugestão de leitura? Compartilhe conosco!
+                  Todos os livros são disponibilizados em PDF gratuitamente via WhatsApp 
+                  para membros das igrejas COGIC no Brasil.
                 </p>
                 <Button 
                   variant="outline" 
                   size="sm"
                   className="border-white/30 text-white hover:bg-white hover:text-burgundy"
                 >
-                  Enviar Sugestão
+                  Solicitar PDF Atual
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
