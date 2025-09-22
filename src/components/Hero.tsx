@@ -36,7 +36,7 @@ const Hero = () => {
           {/* Main Headline */}
           <div className="mb-12">
             <div className="mb-6">
-              <h1 className="font-serif-elegant text-white text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
+              <h1 className="font-playfair text-white text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4">
                 <span className="block text-gold animate-fade-in">Estude 1 Livro</span>
                 <span className="block text-white animate-fade-in">em 4 Meses</span>
                 <span className="block text-gold animate-fade-in">Com Profundidade</span>
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center space-x-4 mb-6">
               <div className="w-16 h-0.5 bg-gold"></div>
-              <p className="text-gold font-medium tracking-[0.2em] text-lg uppercase">
+              <p className="text-gold font-medium tracking-[0.2em] text-lg uppercase font-inter">
                 Leitura Quinzenal | 7 Encontros em 4 Meses
               </p>
             </div>
@@ -52,7 +52,7 @@ const Hero = () => {
 
           {/* Description */}
           <div className="mb-16 max-w-3xl">
-            <p className="text-white/95 text-xl md:text-2xl leading-relaxed font-light">
+            <p className="text-white/95 text-xl md:text-2xl leading-relaxed font-light font-inter">
               Junte-se a homens cristãos para estudar <span className="font-semibold text-gold">1 livro em 4 meses</span> 
               com profundidade e discussões quinzenais. Uma jornada de <strong className="text-gold">crescimento espiritual 
               e intelectual exclusiva para membros das igrejas COGIC no Brasil.</strong>
@@ -64,7 +64,7 @@ const Hero = () => {
             <div className="flex flex-col gap-4 mb-8">
               <Button
                 size="lg"
-                className="bg-burgundy hover:bg-burgundy/90 text-white font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group"
+                className="bg-burgundy hover:bg-burgundy/90 text-white font-bold px-12 py-6 text-xl rounded-full transition-all duration-300 hover:scale-105 shadow-2xl border-0 group font-inter"
                 onClick={() => window.open('https://chat.whatsapp.com/CZtfBZlRd5i0nmH0NrLBkE', '_blank')}
               >
                 QUERO PARTICIPAR AGORA

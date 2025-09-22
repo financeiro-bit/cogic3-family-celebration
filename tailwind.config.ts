@@ -70,6 +70,9 @@ export default {
         warm: "var(--shadow-warm)",
       },
       fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'serif-elegant': ['Playfair Display', 'serif'],
         sans: [
           "Inter",
           "-apple-system",
