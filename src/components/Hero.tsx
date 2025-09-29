@@ -91,8 +91,8 @@ const Hero = () => {
               { 
                 icon: Calendar, 
                 title: "Início em Breve", 
-                subtitle: "01 de Outubro",
-                description: "20h - Reunião de Abertura" 
+                subtitle: "03 de Outubro",
+                description: "20h - Sexta-feira" 
               }
             ].map((item, index) => {
               const Icon = item.icon;
