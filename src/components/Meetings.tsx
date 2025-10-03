@@ -175,6 +175,7 @@ const Meetings = () => {
                       variant="outline" 
                       size="lg"
                       className="border-gold text-gold hover:bg-gold hover:text-burgundy"
+                      onClick={() => window.open('https://meet.google.com/', '_blank')}
                     >
                       Acessar Google Meet
                       <MapPin className="ml-2 h-5 w-5" />
