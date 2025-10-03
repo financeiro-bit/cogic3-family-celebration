@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Meetings = () => {
   const nextMeeting = {
-    date: "01 de Outubro, 2025",
+    date: "03 de Outubro, 2025",
     time: "20h00 - 21h30",
     location: "Primeira Reunião Presencial",
     address: "Local será confirmado via WhatsApp",

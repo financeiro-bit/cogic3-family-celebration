@@ -15,7 +15,7 @@ const ReadingSchedule = () => {
     {
       number: 1,
       title: "APRESENTAÇÃO E INÍCIO",
-      date: "01 de Outubro de 2025 - 20h",
+      date: "03 de Outubro de 2025 - 20h",
       status: "upcoming",
       reading: "Apenas Prefácio e Introdução (páginas 6-7)",
       agenda: [
